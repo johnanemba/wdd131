@@ -16,7 +16,7 @@ img {
 body {
     font-family: 'Verdana', sans-serif;  /* A more unique, easy-to-read font */
     background-color: #f3f9fb;  /* Very light blue-gray background */
-    color: #444;  /* Slightly darker text for better readability */
+    color: #444444;  /* Slightly darker text for better readability */
     padding: 20px;
     line-height: 1.6;  /* Slightly increased line height for easier reading */
 }
@@ -24,7 +24,7 @@ body {
 /* Header styles */
 header {
     background-color: #003366;  /* Deep blue to create a sense of professionalism */
-    color: #fff;
+    color:bisque;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
@@ -34,7 +34,7 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    font-family: 'Georgia', serif; /* A little more formal font for the heading */
+    font-family: 'g', serif; /* A little more formal font for the heading */
     margin-bottom: 10px;
 }
 
@@ -59,7 +59,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;  /* Gold color on hover for a unique touch */
+    color: #1500ff;  /* Gold color on hover for a unique touch */
 }
 
 /* Main content styling */
