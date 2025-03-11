@@ -5,26 +5,19 @@
     box-sizing: border-box;
 }
 
-/* Image styles */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-/* Body styles: Use a clean, neutral background color with a slight personal touch */
+/* Body styling */
 body {
-    font-family: 'Verdana', sans-serif;  /* A more unique, easy-to-read font */
+    font-family: 'Verdana', sans-serif;  /* More unique, readable font */
     background-color: #f3f9fb;  /* Very light blue-gray background */
-    color: #444444;  /* Slightly darker text for better readability */
+    color: #444;  /* Slightly darker text for better readability */
     padding: 20px;
-    line-height: 1.6;  /* Slightly increased line height for easier reading */
+    line-height: 1.6;
 }
 
-/* Header styles */
+/* Header section styling */
 header {
-    background-color: #003366;  /* Deep blue to create a sense of professionalism */
-    color:bisque;
+    background-color: #003366;  /* Deep blue for professionalism */
+    color: white;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
@@ -34,63 +27,64 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    font-family: 'g', serif; /* A little more formal font for the heading */
+    font-family: 'Georgia', serif;  /* A more formal and stylish font for headings */
     margin-bottom: 10px;
 }
 
-/* Navigation styles: Clean and personalized */
+/* Navigation styles: Flexbox for layout */
 nav ul {
     list-style: none;
+    display: flex;  /* Flexbox for horizontal navigation */
+    justify-content: center;  /* Center the menu items */
     padding: 0;
     margin-top: 15px;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px;
+    margin: 0 20px;  /* Space between menu items */
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
+/* Hover effect for navigation */
 nav ul li a:hover {
-    color: #1500ff;  /* Gold color on hover for a unique touch */
+    color: #ffcc00;  /* Gold color when hovering */
 }
 
-/* Main content styling */
+/* Main content section */
 main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;  /* Adds a space between the cards */
+    display: grid;  /* Use CSS Grid for the layout */
+    grid-template-columns: repeat(2, 1fr);  /* Two equal-width columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;  /* Center the grid on the screen */
 }
 
-/* Card section style: Adding a more personalized style to the cards */
+/* Card styling */
 .card {
     background-color: #fff;
-    width: 45%;
-    margin-bottom: 20px;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow for depth */
     text-align: center;
     transition: transform 0.3s ease-in-out;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover for interactivity */
+    transform: scale(1.05);  /* Slight zoom effect on hover */
 }
 
 .card h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #003366; /* Blue color for card headings */
-    font-family: 'Georgia', serif; /* Consistent font with header */
+    color: #003366;  /* Matching the header color */
+    font-family: 'Georgia', serif;  /* Consistent font with header */
 }
 
 .card img {
@@ -102,24 +96,24 @@ main {
 }
 
 .card img:hover {
-    opacity: 0.8; /* Slight fade effect on hover for images */
+    opacity: 0.8;  /* Slight fade effect on hover */
 }
 
-/* Responsive layout: Stack cards vertically on smaller screens */
+/* Responsive design: Stack cards vertically on small screens */
 @media (max-width: 768px) {
-    .card {
-        width: 100%; /* Cards take up full width on small screens */
+    main {
+        grid-template-columns: 1fr;  /* Single column layout on smaller screens */
     }
 
     nav ul li {
         display: block;
-        margin: 10px 0;
+        margin: 10px 0;  /* Stack menu items vertically */
     }
 }
 
-/* Footer styles: More custom styling for the footer */
+/* Footer styles */
 footer {
-    background-color: #003366; /* Deep blue to match the header */
+    background-color: #003366;  /* Deep blue footer */
     color: white;
     padding: 20px;
     text-align: center;
@@ -136,14 +130,8 @@ footer span {
     font-weight: bold;
 }
 
-/* Additional styling for footer links or customization */
 footer a {
-    color: #ffcc00; /* Gold color for links in the footer */
+    color: #131cc8;  /* Gold color for footer links */
     text-decoration: none;
     font-weight: normal;
-}
-
-footer a:hover {
-    color: #fff; /* Changes to white on hover */
-    text-decoration: underline;  /* Adds an underline on hover */
 }
