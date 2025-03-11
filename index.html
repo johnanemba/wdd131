@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and other head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - John Anemba</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, your name, Web Development, HTML, CSS, JavaScript, Course Page">
+    <meta name="author" content="John Anemba">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>WDD 131 – Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/your-profile">LinkedIn Profile</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Favorite Scripture</a></li>
+                <li><a href="your-final-project-folder-link">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="card">
+            <h2>Section Title 1</h2>
+            <img src="image/temple.jpeg" alt="my self in the temple">
+            <p>My name is John Anemba. Kenya Nairobi is my place of birth and I am currently living in Nairobi, Kenya. I am self-employed as a trader. I love teaching and am an institute teacher.</p>
+        </section>
+
+        <section class="card">
+            <h2>Section Title 2</h2>
+            <img src="image/kenya.jpeg" alt="Kenya flag">
+            <p>Kenya is known worldwide as the place where you can see all five of the big wild animals and is located in East Africa. It is home to some of the best athletes, earning the title "Home of the Champions". Kenya has the largest game reserves, and its main income comes from tourism. With a population of 40 million, Kenya is home to 44 tribes, and the Luhya is the largest ethnic group. Despite tribal divisions, Kenya is the fastest growing country in terms of GDP.</p>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> John Anemba, Kenya Nairobi</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript code to dynamically populate the current year and last modified date -->
+    <script>
+        // Set the current year dynamically
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+        // Set the last modified date dynamically
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+    </script>
+</body>
+
+</html>
