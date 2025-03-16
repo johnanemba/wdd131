@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+         <button id="menu-toggle"class="hamburger">☰</button>
+        <nav>
+            <ul id="menu" class="hidden">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="old.html">Old</a></li>
+                <li><a href="new.html">New</a></li>
+                <li><a href="large.html">Large</a></li>
+                <li><a href="small.html">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Temple Gallery</h1>
+        <section class="gallery">
+            <figure>
+                <img src="images/johberg.jpg" alt="Temple Name">
+                <figcaption>Johannesburg</figcaption>
+            </figure>
+            <!-- Repeat for 9 images -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="2025"></span> John Anemba</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
