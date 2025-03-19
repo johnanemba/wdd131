@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="sw">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A stunning temple album featuring historic and modern temples worldwide.">
+    <meta name="author" content="John Anemba">
+    <meta name="keywords" content="temples, temple album, temple gallery, temple pictures, temple photos, temple images">
     <title>Temple Album</title>
     <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
@@ -12,7 +15,7 @@
 <body>
     <header>
         <h1>Temple Album</h1>
-         <button id="menu-toggle"class="hamburger">☰</button>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation">☰</button>
         <nav>
             <ul id="menu" class="hidden">
                 <li><a href="index.html">Home</a></li>
@@ -26,47 +29,46 @@
     <main>
         <h1>Temple Gallery</h1>
         <section class="gallery">
-            
             <figure>
-                <img src="images/johberg.jpg" alt="Temple 1">
-                <figcaption>Sauth Africa Johnesburg</figcaption>
+                <img src="images/johberg.jpg" alt="Johannesburg Temple">
+                <figcaption>South Africa Johannesburg</figcaption>
             </figure>
             <figure>
-                <img src="images/mesa.jpg" alt="Temple 2">
-                <figcaption>mesa </figcaption>
+                <img src="images/mesa.jpg" alt="Mesa Temple">
+                <figcaption>Mesa</figcaption>
             </figure>
             <figure>
-                <img src="images/Nauvoo.jpg" alt="Temple 3">
+                <img src="images/Nauvoo.jpg" alt="Nauvoo Temple">
                 <figcaption>Nauvoo</figcaption>
             </figure>
             <figure>
-                <img src="images/madridspain.jpg" alt="Temple 4">
-                <figcaption>Madrid spain</figcaption>
+                <img src="images/madridspain.jpg" alt="Madrid Spain Temple">
+                <figcaption>Madrid, Spain</figcaption>
             </figure>
             <figure>
-                <img src="images/Provo.jpg" alt="Temple 5">
+                <img src="images/Provo.jpg" alt="Provo Temple">
                 <figcaption>Provo</figcaption>
             </figure>
             <figure>
-                <img src="images/rome.jpg" alt="Temple 6">
+                <img src="images/rome.jpg" alt="Rome Temple">
                 <figcaption>Rome</figcaption>
             </figure>
             <figure>
-                <img src="images/sydney.jpg" alt="Temple 7">
-                <figcaption>sydney</figcaption>
+                <img src="images/sydney.jpg" alt="Sydney Temple">
+                <figcaption>Sydney</figcaption>
             </figure>
             <figure>
-                <img src="images/tokyo.jpg" alt="Temple 8">
-                <figcaption> TOKYO JAPAN</figcaption>
-            <!-- Repeat for 9 images -->
+                <img src="images/tokyo.jpg" alt="Tokyo Japan Temple">
+                <figcaption>Tokyo, Japan</figcaption>
             </figure>
             <figure>
-                <img src="images/atlanta.jpg" alt="Temple 9">
-                <figcaption>Atlanta.jpg</figcaption>
+                <img src="images/atlanta.jpg" alt="Atlanta Temple">
+                <figcaption>Atlanta</figcaption>
+            </figure>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="2025"></span> John Anemba</p>
+        <p>&copy; <span id="year"></span> John Anemba</p>
         <p>Last modified: <span id="last-modified"></span></p>
     </footer>
 </body>

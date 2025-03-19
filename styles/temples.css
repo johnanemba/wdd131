@@ -65,7 +65,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc00;
+    background-color: #ccc;
+    color: black;
+    transition: 0.3s;
 }
 
 /* Hamburger Menu */
@@ -87,6 +89,9 @@ container img {
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .hamburger:hover {
@@ -109,6 +114,13 @@ main {
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 10px;
+    width: 100%;
+    height: auto;
+}
+gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 figure {
