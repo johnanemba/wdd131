@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A stunning temple album featuring historic and modern temples worldwide.">
+    <meta name="author" content="John Anemba">
+    <meta name="keywords" content="temples, temple album, temple gallery, temple pictures, temple photos, temple images">
+    <title>Filtered Temple Album</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script defer src="scripts/filtered-temples.js"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Filtered Temple Album</h1>
+        <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <nav>
+            <ul id="menu" class="hidden">
+                <li><a href="#" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Temple Gallery</h2>
+        <section id="temple-container" class="gallery">
+            <!-- Dynamic content (Temple Cards) will be inserted here via JavaScript -->
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="year"></span> John Anemba</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+</html>
