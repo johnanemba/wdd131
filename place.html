@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Page</title>
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="styles/place-small.css" media="(max-width: 500px)">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
-    <script defer src="scripts/place.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Place</title>
+  <meta name="description" content="Discover the beauty and weather of My Place. Stay updated with live weather and enjoy responsive design.">
+  <meta name="author" content="John Anemba" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/place.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
 
+  <!-- Scripts -->
+  <script defer src="scripts/place.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Place</h1>
-    </header>
+  <header>
+    <h1>Welcome to My Place</h1>
+  </header>
 
-    <main>
-        <!-- Hero Image -->
-        <section class="hero">
-            <picture>
-                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-                <img src="images/hero-large1.webp" alt="Hero Image" class="hero-image"
-                loading="lazy" width="1000" height="500">
-            </picture>
-            <h2>Discover the Beauty of My Place</h2>
-        </section>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+        <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+        <img src="images/hero-large1.webp" alt="Scenic view of My Place" class="hero-image" loading="lazy" width="1000" height="500">
+      </picture>
+      <h2>Discover the Beauty of My Place</h2>
+    </section>
 
-        <!-- Weather Section -->
-        <section class="weather">
-            <h2>Weather <span class="weather-icon">⛅</span></h2>
-            <p>Temperature: <span id="temp">10</span>°C</p>
-            <p>Wind Speed: <span id="wind-speed">5</span> km/h</p>
-            <p>Wind Chill: <span id="wind-chill">N/A</span></p>
-        </section>
-    </main>
+    <!-- Weather Section -->
+    <section class="weather">
+      <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
+      <p>Temperature: <span id="temp">10</span>°C</p>
+      <p>Wind Speed: <span id="wind-speed">5</span> km/h</p>
+      <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
-    </footer>
-
-    <script src="scripts/place.js" defer></script>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
+  </footer>
 </body>
 </html>
