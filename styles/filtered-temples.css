@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+.roboto-custom {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
