@@ -1,0 +1,82 @@
+/* CSS: Responsive Layout */
+body {
+    font-family: roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: green;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav ul li {
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Main Content Section */
+.content {
+    padding: 20px;
+}
+
+footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    /* Hide the nav links by default */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Display the hamburger menu on small screens */
+    .hamburger {
+        display: block;
+    }
+
+    /* When active, show the menu */
+    #nav-links.active {
+        display: flex;
+    }
+
+    /* Adjust the content padding */
+    .content {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+  header {
+    text-align: left;
+    padding: 1.5rem;
+  }
+
+  button.hamburger {
+    display: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    margin: 0 1rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .temple-card {
+    max-width: 350px;
+  }
+
+  /* Override .hidden for large view */
+  #menu.hidden {
+    display: flex !important;
+  }
+}
