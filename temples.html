@@ -1,22 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A stunning temple album featuring historic and modern temples worldwide.">
+
+    <meta name="description"
+        content="Explore a collection of beautiful temples from around the world in this responsive Temple Album by John Anemba.">
+
     <meta name="author" content="John Anemba">
-    <meta name="keywords" content="temples, temple album, temple gallery, temple pictures, temple photos, temple images">
-    <title>Temple Album</title>
+
+    <title>Temple Album | John Anemba</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Files -->
     <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
-    <script defer src="scripts/temples.js"></script>
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/temples.js" defer></script>
 </head>
+
 <body>
+
     <header>
         <h1>Temple Album</h1>
-        <button id="menu-toggle" class="hamburger" aria-label="Toggle navigation">☰</button>
-        <nav>
+
+        <button id="menu-toggle"
+            class="hamburger"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="menu">
+            ☰
+        </button>
+
+        <nav aria-label="Main navigation">
             <ul id="menu" class="hidden">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="old.html">Old</a></li>
@@ -26,50 +51,73 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Temple Gallery</h1>
-        <section class="gallery">
+        <h2>Temple Gallery</h2>
+
+        <section class="gallery" aria-label="Temple picture collection">
+
             <figure>
-                <img src="images/johberg.jpg" alt="Johannesburg Temple">
-                <figcaption>South Africa Johannesburg</figcaption>
+                <img src="images/johberg.jpg"
+                    alt="Johannesburg South Africa Temple">
+                <figcaption>Johannesburg, South Africa</figcaption>
             </figure>
+
             <figure>
-                <img src="images/mesa.jpg" alt="Mesa Temple">
-                <figcaption>Mesa</figcaption>
+                <img src="images/images/mesa.jpg"
+                    alt="Mesa Arizona Temple">
+                <figcaption>Mesa, Arizona</figcaption>
             </figure>
+
             <figure>
-                <img src="images/Nauvoo.jpg" alt="Nauvoo Temple">
-                <figcaption>Nauvoo</figcaption>
+                <img src="images/images/Nauvoo.jpg"
+                    alt="Nauvoo Illinois Temple">
+                <figcaption>Nauvoo, Illinois</figcaption>
             </figure>
-       n     <figure>
-                <img src="images/madridspain.jpg" alt="Madrid Spain Temple">
+
+            <figure>
+                <img src="images/madridspain.jpg"
+                    alt="Madrid Spain Temple">
                 <figcaption>Madrid, Spain</figcaption>
             </figure>
+
             <figure>
-                <img src="images/Provo.jpg" alt="Provo Temple">
-                <figcaption>Provo</figcaption>
+                <img src="images/images/Provo.jpg"
+                    alt="Provo Utah Temple">
+                <figcaption>Provo, Utah</figcaption>
             </figure>
+
             <figure>
-                <img src="images/rome.jpg" alt="Rome Temple">
-                <figcaption>Rome</figcaption>
+                <img src="images/images/rome.jpg"
+                    alt="Rome Italy Temple">
+                <figcaption>Rome, Italy</figcaption>
             </figure>
+
             <figure>
-                <img src="images/sydney.jpg" alt="Sydney Temple">
-                <figcaption>Sydney</figcaption>
+                <img src="images/images/sydney.jpg"
+                    alt="Sydney Australia Temple">
+                <figcaption>Sydney, Australia</figcaption>
             </figure>
+
             <figure>
-                <img src="images/tokyo.jpg" alt="Tokyo Japan Temple">
+                <img src="images/images/tokyo.jpg"
+                    alt="Tokyo Japan Temple">
                 <figcaption>Tokyo, Japan</figcaption>
             </figure>
+
             <figure>
-                <img src="images/atlanta.jpg" alt="Atlanta Temple">
-                <figcaption>Atlanta</figcaption>
+                <img src="images/atlanta.jpg"
+                    alt="Atlanta Georgia Temple">
+                <figcaption>Atlanta, Georgia</figcaption>
             </figure>
+
         </section>
     </main>
+
     <footer>
         <p>&copy; <span id="year"></span> John Anemba</p>
         <p>Last modified: <span id="last-modified"></span></p>
     </footer>
+
 </body>
 </html>
