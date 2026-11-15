@@ -1,49 +1,142 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Place</title>
-  <meta name="description" content="Discover the beauty and weather of My Place. Stay updated with live weather and enjoy responsive design.">
-  <meta name="author" content="John Anemba" />
-  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kenya | Country Page</title>
+
+  <meta name="description" content="Discover Kenya, its beautiful landscapes, culture, people and weather.">
+  <meta name="author" content="John Anemba">
+
   <!-- Styles -->
   <link rel="stylesheet" href="styles/place.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- Scripts -->
+  <!-- JavaScript -->
   <script defer src="scripts/place.js"></script>
 </head>
+
 <body>
+
   <header>
-    <h1>Welcome to My Place</h1>
+    <h1>Kenya</h1>
   </header>
 
   <main>
+
     <!-- Hero Section -->
     <section class="hero">
+
       <picture>
-        <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-        <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-        <img src="images/hero-large1.webp" alt="Scenic view of My Place" class="hero-image" loading="lazy" width="1000" height="500">
+        <source
+          srcset="images/hero-image.webp"
+          media="(max-width: 500px)"
+          type="image/webp">
+
+        <source
+          srcset="images/hero-large.webp"
+          media="(max-width: 1000px)"
+          type="image/webp">
+
+        <img
+          src="images/hero-large1.webp"
+          alt="Beautiful landscape of Kenya"
+          class="hero-image"
+          width="1500"
+          height="800">
       </picture>
-      <h2>Discover the Beauty of My Place</h2>
+
+      <h2>Discover the Beauty of Kenya</h2>
+
+    </section>
+
+    <!-- Data Section -->
+    <section class="data">
+
+      <h2>Data</h2>
+
+      <p><strong>Area:</strong> 580,367 km²</p>
+
+      <p><strong>Capital:</strong> Nairobi</p>
+
+      <p><strong>Population:</strong> Approximately 47.6 million (2019 census)</p>
+
+      <p><strong>Languages:</strong> Swahili and English</p>
+
+      <p><strong>Currency:</strong> Kenyan Shilling (KES)</p>
+
+      <p><strong>Time Zone:</strong> UTC+3</p>
+
+      <p><strong>Calling Code:</strong> +254</p>
+
     </section>
 
     <!-- Weather Section -->
     <section class="weather">
-      <h2>Weather <span class="weather-icon" aria-hidden="true"></span></h2>
-      <p>Temperature: <span id="temp">10</span>°C</p>
-      <p>Wind Speed: <span id="wind-speed">5</span> km/h</p>
-      <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+
+      <h2>
+        Weather
+        <span class="weather-icon" aria-hidden="true"></span>
+      </h2>
+
+      <!-- SVG weather icon for mobile -->
+      <svg class="mobile-weather-icon"
+           xmlns="http://www.w3.org/2000/svg"
+           viewBox="0 0 64 64"
+           width="60"
+           height="60"
+           role="img"
+           aria-label="Partly cloudy weather">
+
+        <circle cx="23" cy="22" r="13" fill="#f4b400"/>
+
+        <path d="M20 47
+                 C20 39 26 34 34 34
+                 C36 24 51 23 55 35
+                 C63 36 65 48 57 51
+                 H28
+                 C23 51 20 49 20 47Z"
+              fill="#8ecae6"/>
+
+      </svg>
+
+      <p><strong>Temperature:</strong>
+        <span id="temp">10</span> °C
+      </p>
+
+      <p><strong>Conditions:</strong> Partly Cloudy</p>
+
+      <p><strong>Wind Speed:</strong>
+        <span id="wind-speed">5</span> km/h
+      </p>
+
+      <p><strong>Wind Chill:</strong>
+        <span id="wind-chill">N/A</span>
+      </p>
+
     </section>
+
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; <span id="year"></span> | Last modified: <span id="last-modified"></span></p>
+
+    <p>
+      &copy; <span id="year"></span>
+      John Anemba | Kenya
+    </p>
+
+    <p>
+      Last Modified:
+      <span id="last-modified"></span>
+    </p>
+
   </footer>
+
 </body>
 </html>
