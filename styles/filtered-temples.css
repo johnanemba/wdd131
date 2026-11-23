@@ -1,163 +1,190 @@
-/* Reset */
+
+/* =====================================
+   FILTERED TEMPLE ALBUM
+   Mobile First CSS
+===================================== */
+
+/* CSS Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.roboto-custom {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: italic;
-  font-variation-settings: "wdth" 100;
-}
-
+/* General Page Styles */
 body {
-  font-family: 'Roboto', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-h1, h3 {
-  color: #2c3e50;
+    font-family: "Roboto", Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333333;
 }
 
 /* Header */
 header {
-  background-color: #3498db;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  position: relative;
+    background-color: #17466e;
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: relative;
 }
 
 header h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
 }
 
+/* Hamburger Button */
 button.hamburger {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  display: block;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 0.2rem 0.6rem;
+    font-size: 1.8rem;
+    color: #ffffff;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+button.hamburger:hover,
+button.hamburger:focus {
+    background-color: #ffffff;
+    color: #17466e;
 }
 
 /* Navigation */
 nav {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 #menu {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 #menu.hidden {
-  display: none;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-nav ul li {
-  margin: 1rem 0;
+    display: none;
 }
 
 nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-  color: #1abc9c;
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #ffffff;
+    color: #17466e;
+    outline: 2px solid #ffffff;
 }
 
-/* Main */
+/* Main Content */
 main {
-  padding: 2rem 1rem;
-  text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+main h2 {
+    color: #17466e;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Gallery */
+/* Temple Gallery */
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 2rem;
-  justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: stretch;
 }
 
+/* Temple Cards */
 .temple-card {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-  overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .temple-card:hover {
-  transform: scale(1.05);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
 
-.temple-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-}
-
-.temple-card p {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
+/* Temple Card Images */
 .temple-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-top: 1rem;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
-  opacity: 0;
+    display: block;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 1rem;
 }
 
-/* Lazy load effect */
-.temple-card img[loading="lazy"]:not([src=""]) {
-  opacity: 1;
+/* Temple Card Headings */
+.temple-card h3 {
+    color: #17466e;
+    font-size: 1.25rem;
+    margin-bottom: 0.7rem;
+    text-align: center;
+}
+
+/* Temple Card Information */
+.temple-card p {
+    color: #333333;
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    overflow-wrap: anywhere;
 }
 
 /* Footer */
 footer {
-  background-color: #2c3e50;
-  color: white;
-  padding: 1rem;
-  text-align: center;
+    background-color: #173b5e;
+    color: #ffffff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    margin-top: 2rem;
 }
 
 footer p {
-  font-size: 0.9rem;
-  margin: 0.5rem 0;
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+}
+
+/* Keyboard Focus */
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid #f5c542;
+    outline-offset: 3px;
+}
+
+/* Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
 }
